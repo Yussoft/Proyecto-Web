@@ -4,7 +4,7 @@
         <meta author="Jesús Sánchez y Alberto Argente">
         <meta charset="UTF-8">
         <title> Práctica 1 </title>
-        <link 
+        <link rel="stylesheet" href="estilo.css">
 
     </head>
 
@@ -12,27 +12,40 @@
 
         <!-- CABECERA -->
         <header>
-            <p> Universidad de Granada </p>
 
-            <div id="botones_busqueda">
-                <input type="radio" name="busqueda" value="web">
-                <input type="radio" name="busqueda" value="gente">
+            <div id="p1">
+                <div id="caja1">
+                    <p id="titulo_header"> Universidad de Granada </p>
+
+                    <div class="botones_busqueda">
+                        Web <input type="radio" name="busqueda" value="web"> 
+                        Gente<input type="radio" name="busqueda" value="gente"> 
+                        <input type="text" name="busqueda" placeholder="su búsqueda">
+
+                    </div>
+                </div>
             </div>
-    
-            <ul id="Menu_navegacion_general">
-                <li> Sobre la Universidad </li>
-                <li> Administración </li>
-                <li> Académica </li>
-                <li> Investigación </li>
-                <li> Directorio </li>
-            </ul>
 
-            <ul id="Enlaces_rapidos">
-                <li> Estudiantes </li>
-                <li> Personal </li>
-                <li> Egresados </li>
-            </ul>
+            <div id="enlaces">
+                <div id="p2">
+                    <ul class="h_list" id="Menu_nav_genenral">
+                        <li> <a id="actual" href="">Sobre la Universidad</a> </li>
+                        <li> <a href="">Administración</a></li>
+                        <li> <a href="">Académica </a></li>
+                        <li> <a href="">Investigación</a></li>
+                        <li> <a href="">Directorio </a></li>
+                    </ul>
+                </div>
 
+                <div id="p3">
+                    <ul class="h_list" id="Enlaces_rapidos">
+                        <li> <a href="">ESTUDIANTES </a></li>
+                        <li> <a href="">PERSONAL </a></li>
+                        <li> <a href="">EGRESADOS </a></li>
+                    </ul>
+                </div>
+            </div>
+                
         </header>
 
         <!-- CUERPO -->
@@ -40,48 +53,41 @@
 
             <p id="titulo"> Sobre la Universidad de Granada </p>
 
-            <p id="texto_descriptivo"> La Universidad de Granada fue fundada en 
-            1531, siendo continuadora de una larga tradición docente que enlaza
-            con la Madraza del último Reino Nazarí. En Granada hay cuatro campus
-            universitarios, además del "Campus del Centro", en el que se integran
-            todos los centros dispersos por el casco histórico de la ciudad. Hay
-            otros dos campus de la UGR en las ciudades de Ceuta y Melilla, en el
-            norte de África.
-
-            </p>
-
-            <img src="img/imagen_cuerpo.png" alt="Imagen Universidad">
-
             <!-- SECCIONES -->
-            <div id="secciones">
+            <article>
             
+                <div id="texto_imagen">
+                <p id="texto_descriptivo">La Universidad de Granada fue fundada en 
+                1531, siendo continuadora de una larga tradición docente que enlaza
+                con la Madraza del último Reino Nazarí. En Granada hay cuatro campus
+                universitarios, además del "Campus del Centro", en el que se integran
+                todos los centros dispersos por el casco histórico de la ciudad. Hay
+                otros dos campus de la UGR en las ciudades de Ceuta y Melilla, en el
+                norte de África.<br></p> 
+
+            </div>
+                
                 <section id="1">
-                    <p> 
-                        La Universidad en cifras
-                    </p>
-
+                    
                     <img src="img/foto1_secciones.png" alt="foto1">
+                    <div class="texto">
+                        <p class="titulo"> La Universidad en cifras  </p>
 
-                    <p> 
-                        Aquí podrá consultar datos sobre la gestión económica,
-                        titulaciones y personal.
-                    </p>
-
-                    <ul>
+                        <p class="descripcion"> Aquí podrá consultar datos sobre la gestión económica, titulaciones y personal.</p>
+                    </div>
+                    <ul>   
                         <li> Memoria de gestión económica </li>
-                        <li> Estadísticas académicas </li>
+                        <li> Estadí"sticas académicas </li>
                         <li> Datos sobre el personal </li>
                     </ul>
                 </section>
 
                 <section id="2">
-                    <p> 
-                        El entorno de la Universidad
-                    </p>
+                    <p clase="titulo"> El entorno de la Universidad </p>
 
                     <img src="img/foto2_secciones.png" alt="foto2">
 
-                    <p> 
+                    <p clase="descripcion"> 
                         En la UGR estudian más de 60.000 alumnos de grado y 
                         posgrado y otros 10.000 realizan cursos complementarios,
                         de idiomas, de verano, etc. La ciudad de Granada ofrece,
@@ -98,20 +104,11 @@
                 </section>
 
                 <section id="3">
-                    <p> 
-                        Gobierno de la Universidad
-                    </p>
+                    <p class="titulo"> Gobierno de la Universidad </p>
 
                     <img src="img/foto3_secciones.png" alt="foto3">
 
-                    <p> 
-                        El gobierno de la universidad de Granada y su representación
-                        corresponde y queda distribuido entre distintos órganos de 
-                        gobierno que dan cabida a facultades y escuelas, departamentos
-                        e institutos, además de los órganos generales de gobierno
-                        y representación.  Todos los anteriores tienen representación
-                        en el Consejo de Gobierno.
-                    </p>
+                    <p clase="descripcion"> El gobierno de la universidad de Granada y su representación corresponde y queda distribuido entre distintos órganos de gobierno que dan cabida a facultades y escuelas, departamentos e institutos, además de los órganos generales de gobierno y resentación.  Todos los anteriores tienen representación en el Consejo de Gobierno.</p>
 
                     <ul>
                         <li> Rectorado </li>
@@ -123,15 +120,11 @@
                 </section>
 
                 <section id="4">
-                    <p> 
-                        Noticias UGR
-                    </p>
+                    <p class="titulo"> Noticias UGR </p>
 
                     <img src="img/foto4_secciones.png" alt="foto4">
 
-                    <p> 
-                        Información de interés actualizada sobre la Universidad.
-                    </p>
+                    <p clase="descripcion">  Información de interés actualizada sobre la Universidad.</p>
 
                     <ul>
                         <li> Noticas </li>
@@ -142,46 +135,170 @@
                 </section>
 
     
-            </div>
+            </article>
             
             <!-- CAJA LATERAL -->
-            <div id="caja_lateral">
+            <aside>
 
-                <p> La UGR en cifras </p>
-                <p> FUNDADA EN 1531 </p>
-                <p> ESTUDIOS </p>
-                <ul>    
-                    <il> Grado: 75 </il>
-                    <il> Másteres: 121 </il>
-                    <il> Doctorados: 28 </il>
-                    <il> Cursos: más de 100 </il>
-                </ul>
+                <!-- FOTO -->
+                <img src="img/imagen_cuerpo.png" alt="Imagen Universidad">
 
-                <p> DEPENDENCIAS </p>
-                <ul> 
-                    <il> 27 centros </il>
-                    <il> 123 departamentos </il>
-                    <il> Sedes en Granada, Ceuta y Melilla </il>
-                </ul>
-
-                <p> PERSONAL </p> 
-                <ul>
-                    <il> Personal docente: 2.200 </il>
-                </ul>
                 
-                <!-- Enlance "APRENDER MÁS" -->
-                <div>
-                    <img src="" alt="">
-                    <a href=""> APRENDER MÁS </a>
-                <div>
-            </div>
+                <!-- CAJA GRIS --> 
+                <div id="cifras">
+                    <p> La UGR en cifras </p>
+                    <p> FUNDADA EN 1531 </p>
+                    <p> ESTUDIOS </p>
+                    <ul>    
+                        <il> Grado: 75 </il>
+                        <il> Másteres: 121 </il>
+                        <il> Doctorados: 28 </il>
+                        <il> Cursos: más de 100 </il>
+                    </ul>
+
+                    <p> DEPENDENCIAS </p>
+                    <ul> 
+                        <il> 27 centros </il>
+                        <il> 123 departamentos </il>
+                        <il> Sedes en Granada, Ceuta y Melilla </il>
+                    </ul>
+
+                    <p> PERSONAL </p> 
+                    <ul>
+                        <il> Personal docente: 2.200 </il>
+                    </ul>
+                    
+                    <div id="aprende_mas">
+                        <img src="" alt="">
+                        <a href=""> APRENDER MÁS </a>
+                    </div>
+                </div>
+                
+                
+                <!-- VER TAMBIEN -->
+                <div id="ver">
+                    
+                    <img src=""> 
+                    <p> VER TAMBIÉN</p>
+                    <p> Conferencia Inaugural del curso</p>
+                    <p> Incluye concierto de Miguel Ríos</p>
+                </div>
+                
+            </aside>
 
         </div> <!-- Fin de div id="cuerpo" -->
+        
+        <footer>
+        
+            <div id="footer_gris">
+            
+                <div id="listas">
+                
+                    <div id="l1">
+                        <ul>
+                            <li> <a href=""> DISCIPLINAS </a></li>
+                            <li> <a href=""> Ingenierías</a></li>
+                            <li> <a href=""> Ciencias</a></li>
+                            <li> <a href=""> Humanidades</a></li>
+                            <li> <a href=""> Ciencias de la Salud</a></li>
+                            <li> <a href=""> Ciencias Jurídicas</a></li>
+                        </ul>
+                    
+                    </div>
+                
+                    <div id="l2">
+                    
+                        <ul>
+                            <li> <a href=""> DEPARTAMENTOS </a></li>
+                            <li> <a href=""> Alfabético A-Z</a></li>
+                            <li> <a href=""> Institutos</a></li>  
+                        </ul>
+                        
+                        <ul>
+                            <li><a href=""> INVESTIGACIÓN </a></li>
+                            <li><a href=""> Alfabético A-Z </a></li>
+                            <li><a href=""> Institutos de investigación </a></li>
+                            <li><a href=""> Proyectos </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="l3">
+                        
+                        <ul>
+                            <li><a href=""> ACCIÓN SOCIAL </a></li>
+                            <li><a href=""> Programas abiertos </a></li>
+                            <li><a href=""> Programas cerrados </a></li>
+                        </ul>
+                    
+                        <ul>
+                            <li><a href=""> APRENDIZAJE ONLINE </a></li>
+                            <li><a href=""> Centro de enseñanzas virtuales </a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div id="l4">
+                    
+                        <ul>
+                            <li><a href=""> SOBRE LA UGR </a></li>
+                            <li><a href=""> Datos </a></li>
+                            <li><a href=""> Historia </a></li>
+                            <li><a href=""> Calidad </a></li>
+                        </ul>
+                        
+                        <ul>
+                            <li><a href=""> INGRESO </a></li>
+                            <li><a href=""> Grado </a></li>
+                            <li><a href=""> Posgrado </a></li>
+                            <li><a href=""> Servicio de becas </a></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    
+                    <div id="l5">
+                    
+                        <ul>
+                            <li><a href=""> RECURSOS </a></li>
+                            <li><a href=""> Índice A-Z </a></li>
+                            <li><a href=""> Mapa </a></li>
+                            <li><a href=""> Directorio </a></li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                
+                <div id="iconos">
+                 
+    
+                </div>
+            </div>
+        
+            <div id="footer_rojo">
+            
+                <div id="div_izq">
+                    <p> Universidad de<br>Granada</p>
+                </div>
+                
+                <div id="div_der">
+                    
+                    <ul>
+                        <li><a href=""> Inicio </a></li>
+                        <li><a href=""> Mapa del sitio </a></li>
+                        <li><a href=""> Búsqueda  </a></li>
+                        <li><a href=""> Términos de uso </a></li>
+                        <li><a href=""> Contacto </a></li>
+                    </ul>
+                    
+                    <p> &copy; Universidad de Granada. Cuesta del hospicio S/N 18071. Granada. SPAIN.</p>
+                    
+                </div>
+                 
+            </div>
+        
+        </footer>
 
-        <!-- TODO ALBERTO:
-             - Punto 3.3 Zona inferior de enlaces rápidos
-             - Punto 3.4 Pie de página
-
+        
     </body>
 
 </html>

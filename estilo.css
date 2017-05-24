@@ -1,0 +1,188 @@
+/* TITULO + BUSQUEDA CABECERA */
+#caja1{
+    
+
+}
+
+div#p1{
+
+    height: 100px;
+    background-color: #8C1515;
+
+}
+
+/* Hacer que Titulo y elementos de búsqueda floten en la misma horizontal*/
+#p1 p {
+    
+    float: left;
+}
+
+
+#p1 div.botones_busqueda{
+    
+    float: right;
+    padding-top: 2%;
+    padding-right: 2.7%;
+}
+
+#titulo_header{
+
+    color : white;
+    font-size: 30px;
+    padding-left: 4%;
+    padding-right: 42%;
+}
+
+header{ 
+
+padding-bottom: .7%;
+    min-width: 80%;
+}
+/* FIN TITULO + BUSQUEDA CABECERA */
+
+
+/* LISTAS HORIZONTALES */
+
+#p2 ul, #p3 ul {
+    
+    margin:0;
+    border:0;
+    list-style-type: none; /* Eliminar puntos de la lista*/
+    
+}
+
+/* Letras blancas para web y gente*/
+.botones_busqueda {
+    color: white;
+}
+
+/* Caja grisacea que contiene los enlaces */
+#enlaces {
+    
+    height: 30px;
+    width: 100%;
+    background: #F2F1EB;;
+}
+
+/* Separación de enlaces del borde de la caja gris */
+#p2, #p3 { 
+    
+    padding-top: 5px;
+}
+
+#p2 {
+    float: left;
+    padding-left: 1%;
+}
+
+#p3 {
+    float: right;
+    padding-right: 2.5%;
+}
+
+
+#p2 ul li, #p3 ul li { 
+    /* Mostrar en una linea todos los elementos li */
+    display: inline;
+}
+
+header div#p2 ul li {
+    
+    padding: .2em 1em;
+}
+
+header div#p3 ul li {
+    
+    padding-right: .2em;
+    padding-left: .2em;
+}
+
+
+header div ul li a {
+    text-decoration: none;
+    border-bottom: 2px solid #F2F1EB;
+}
+
+header div#p3 ul li a{
+    
+    font-family: serif;
+    font-size: 12px;
+    
+}
+
+header div ul li a#actual{
+    border-bottom-color: #8C1515;
+
+}
+
+header div ul li a:link {
+    color: black;
+}
+
+
+header div ul li a:visited {
+    color: black;
+}
+/* FIN LISTAS HORIZONTALES */ 
+
+/* CUERPO */
+
+#cuerpo {
+    
+    border: 1px solid blue;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    width: 1300px;
+    height: 1000px;
+    min-width: 800px;
+}
+
+div#cuerpo p#titulo {
+    
+    font-size: 35px;
+    font-family: serif;    
+}
+
+#cuerpo article {
+    
+    float:left;
+    width: 55%;
+}
+
+#cuerpo aside{
+    float:right;
+
+}
+
+/* SECTION */
+
+section {
+    border: 1px solid blue;
+    width: 700px;
+    height: 300px;
+}
+
+section div.texto{
+    float:right;
+}
+
+section
+
+/* FOOTER */
+
+footer{
+    height: 700px;
+}
+
+
+#listas div ul{
+    
+    margin:0;
+    border:0;
+    list-style-type: none;
+}
+    
+#listas div{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
