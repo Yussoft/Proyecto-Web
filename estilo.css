@@ -1,172 +1,173 @@
 /* TITULO + BUSQUEDA CABECERA */
-#caja1{
-    
-
+#bloque_h { /* Caja que tiene la zona roja y la caja de enlaces de la cabecera */
+    margin-top:0;
+    margin-left: 14%;
+    width: 1200px;
+    min-width: 800px;
 }
 
-div#p1{
+/* CAJA ROJA */
+#caja_roja{
 
-    height: 100px;
+    margin:0;
+    height: 80px;
     background-color: #8C1515;
-
+    width: 1200px;
+    
 }
 
-/* Hacer que Titulo y elementos de búsqueda floten en la misma horizontal*/
-#p1 p {
-    
+/* TITULO UNIVERSIDAD GRANADA */
+#caja_roja #titulo_header{
+
     float: left;
-}
-
-
-#p1 div.botones_busqueda{
-    
-    float: right;
-    padding-top: 2%;
-    padding-right: 2.7%;
-}
-
-#titulo_header{
-
     color : white;
     font-size: 30px;
-    padding-left: 4%;
-    padding-right: 42%;
+    margin-left: 4%;
+    margin-top: 20px;
 }
 
-header{ 
-
-padding-bottom: .7%;
-    min-width: 80%;
+/* MENU BUSQUEDA WEB/PERSONAS */
+#caja_roja .botones_busqueda{
+    
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 5%;
+    color: white;
 }
-/* FIN TITULO + BUSQUEDA CABECERA */
+
+/* FIN CAJA ROJA */
 
 
-/* LISTAS HORIZONTALES */
+/* CAJA ENLACES */
 
-#p2 ul, #p3 ul {
+#caja_enlaces{
+    
+    position: absolute;
+    height: 30px;
+    width: 1200px;
+    background: #F2F1EB;
+
+}
+
+#p1{
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#p2{
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 55px;
+}
+#caja_enlaces ul {
     
     margin:0;
     border:0;
     list-style-type: none; /* Eliminar puntos de la lista*/
-    
 }
 
-/* Letras blancas para web y gente*/
-.botones_busqueda {
-    color: white;
-}
-
-/* Caja grisacea que contiene los enlaces */
-#enlaces {
-    
-    height: 30px;
-    width: 100%;
-    background: #F2F1EB;;
-}
-
-/* Separación de enlaces del borde de la caja gris */
-#p2, #p3 { 
-    
-    padding-top: 5px;
-}
-
-#p2 {
-    float: left;
-    padding-left: 1%;
-}
-
-#p3 {
-    float: right;
-    padding-right: 2.5%;
-}
-
-
-#p2 ul li, #p3 ul li { 
+#caja_enlaces ul li{ 
     /* Mostrar en una linea todos los elementos li */
     display: inline;
-}
-
-header div#p2 ul li {
-    
-    padding: .2em 1em;
-}
-
-header div#p3 ul li {
-    
     padding-right: .2em;
     padding-left: .2em;
 }
 
-
-header div ul li a {
+#caja_enlaces ul li a {
     text-decoration: none;
     border-bottom: 2px solid #F2F1EB;
 }
 
-header div#p3 ul li a{
+#caja_enlaces #p1 ul li a{
     
+    margin-top: 0px;
     font-family: serif;
-    font-size: 12px;
+    font-size: 15px;
     
 }
 
-header div ul li a#actual{
+#caja_enlaces #p2 ul li a{
+    
+    font-size: 10px;
+}
+
+#caja_enlaces ul li a#actual{
     border-bottom-color: #8C1515;
 
 }
 
-header div ul li a:link {
+#caja_enlaces ul li a:link {
     color: black;
 }
 
 
-header div ul li a:visited {
+#caja_enlaces ul li a:visited {
     color: black;
 }
 /* FIN LISTAS HORIZONTALES */ 
 
 /* CUERPO */
-
 #cuerpo {
-    
     border: 1px solid blue;
-    margin-left: 15%;
-    margin-bottom: 2%;
-    width: 1300px;
-    height: 1000px;
+    margin-left: 14%;
+    width: 1200px;
+    height: 2000px;
     min-width: 800px;
 }
 
-div#cuerpo p#titulo {
-    
+/* TITULO CUERPO */
+#cuerpo #titulo_cuerpo {
+    margin-left:4%;
+    margin-top: 50px;
     font-size: 35px;
     font-family: serif;    
 }
 
+/* TEXTO INTRO CUERPO */
+#cuerpo #texto_intro{
+    
+    margin-left: 50px;
+    margin-top: 2px;
+    
+}
 #cuerpo article {
     
     float:left;
-    width: 55%;
-}
-
-#cuerpo aside{
-    float:right;
-
+    width: 680px;
 }
 
 /* SECTION */
-
 section {
     border: 1px solid blue;
-    width: 700px;
-    height: 300px;
+    width: 630px;
+    height: auto;
+    margin-left: 50px;
+}
+
+section img {
+
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
 }
 
 section div.texto{
-    float:right;
+    width: 70%;
+    float: right;
 }
 
-section
+/* ASIDE */
+
+#cuerpo aside{
+    float:right;
+    width: 40%;
+
+}
 
 /* FOOTER */
 
