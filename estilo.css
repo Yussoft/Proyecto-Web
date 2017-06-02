@@ -1,8 +1,12 @@
+body{
+    margin: 0px;
+}
+
 /* TITULO + BUSQUEDA CABECERA */
 #bloque_h { /* Caja que tiene la zona roja y la caja de enlaces de la cabecera */
-    margin-top:0;
+    
     margin-left: 14%;
-    width: 1200px;
+    width: 1350px;
     min-width: 800px;
 }
 
@@ -12,7 +16,7 @@
     margin:0;
     height: 80px;
     background-color: #8C1515;
-    width: 1200px;
+    width: 1350px;
     
 }
 
@@ -22,16 +26,17 @@
     float: left;
     color : white;
     font-size: 30px;
-    margin-left: 4%;
+    margin-left: 5%;
     margin-top: 20px;
 }
 
 /* MENU BUSQUEDA WEB/PERSONAS */
 #caja_roja .botones_busqueda{
     
+    font-size: 13px;
     float: right;
     margin-top: 1.5%;
-    margin-right: 5%;
+    margin-right: 3.5%;
     color: white;
 }
 
@@ -42,26 +47,57 @@
 
 #caja_enlaces{
     
-    position: absolute;
     height: 30px;
-    width: 1200px;
+    width: 1350px;
     background: #F2F1EB;
 
 }
 
+/*Enlaces izq header gris*/
 #p1{
+    
     height: 30px;
+    width: 70%;
     float: left;
-    margin-top: 5px;
-    margin-left: 5px;
+    padding-left: 25px;
+
 }
 
+/* Enlaces der header gris*/
 #p2{
+    width: 25%;
     height: 30px;
     float: right;
-    margin-top: 5px;
-    margin-right: 55px;
+    margin-right: 25px;
+    
 }
+
+div.search{
+    
+    padding-right: 25px;
+    float: left;
+}
+
+.botones_busqueda button.glass{
+    
+    float:left;
+    margin-left: -55px;
+    margin-top: 5px;
+    display:inline;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background: url(img/glass2.png);
+    
+    
+}
+.botones_busqueda img {
+    
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
 header #caja_enlaces ul {
     
     margin:0;
@@ -84,14 +120,17 @@ header #caja_enlaces ul li a {
 header #caja_enlaces #p1 ul li a{
     
     margin-top: 0px;
-    font-family: serif;
+    font-family: cursive;
     font-size: 15px;
+    color: gray;
+    
     
 }
 
 #caja_enlaces #p2 ul li a{
     
-    font-size: 10px;
+    font-size: 11px;
+    color:darkslategray;
 }
 
 #caja_enlaces ul li a#actual{
@@ -111,130 +150,296 @@ header #caja_enlaces ul li a:link {
 
 /* CUERPO */
 #cuerpo {
-    border: 1px solid blue;
     margin-left: 14%;
-    width: 1200px;
-    height: 1600px;
+    width: 1350px;
+    height: 1250px;
     min-width: 800px;
+    background-color: #FCFCFC;
 }
 
 /* TITULO CUERPO */
 #cuerpo #titulo_cuerpo {
-    margin-left:4%;
-    margin-top: 50px;
-    font-size: 35px;
-    font-family: serif;    
+    margin-left:5%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    margin-top:0px;
+    font-size: 45px;
+    font-family: cursive ; 
+    color:gray;
 }
 
 /* TEXTO INTRO CUERPO */
 #cuerpo #texto_intro{
     
-    margin-left: 50px;
-    margin-top: 2px;
+    margin-left: 70px;
+    color: gray;
+    font-family: cursive;
     
 }
 #cuerpo article {
     
     float:left;
-    width: 680px;
+    width: 780px;
 }
 
 /* SECTION */
+
+
 section {
-    background-color: aqua;
-    border: .5px solid blue;
     width: 630px;
-    height: 300px;
-    margin-left: 50px;
-    margin-bottom: 1px;
+    height: auto;
+    min-height: 200px;
+    max-height: 350px;
+    margin-left: 70px;
+    margin-bottom: 10px;
 }
 
-section img {
 
-    height: 150px;
-    width: 150px;
-    margin-left: 20px;
-    margin-top: 20px;
+/* Caja izq con la imagen*/
+section div.imagen {
+    
+    height: inherit;
+ 
+    width: 30%;
+    float:left;
+}
+/* Caja derecha con texto y listas*/
+section div.texto{
+    width: 70%;
+    height: inherit;
     float: left;
 }
 
-section div.texto{
-    width: 70%;
-    height: 300px;
-    float: right;
+img.bullets{
+    
+    height: 15px;
+    width: 15px;
+    display: inline;
 }
+
+/* Modificar el padding left inicial*/
+section ul {
+    
+    padding-left: 0px;
+}
+
+section ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    
+}
+  
+section ul li a {
+    text-decoration: none;
+    color: #43423E;
+    font-style: italic;
+    font-family:cursive;
+    font-size: 14px;
+    
+}
+
+.ul_izq, .ul_der{
+    
+    float:left;
+}
+
+section p.titulo{
+    
+    color: #932625;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 0px;
+    
+}
+
+p.des{
+    
+    color: gray;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+section div.imagen img {
+
+    height: 150px;
+    width: 150px;
+    margin-top:20px;
+
+}
+
 
 /* ASIDE */
 
 #cuerpo aside{
     float:right;
+    margin-top: 20px;
     width: 40%;
-
 }
 
 aside img {
     
-    height: 280px;
+    height: 310px;
+    margin-bottom: 20px;
 }
 
-#cifras .titulo {
-    
-    color: #932625;
-    
-}
+/* UGR EN CIFRAS */
 
 #cifras {
-    border-radius: 25px;
+    border-radius: 10px;
     width: 88%;
+    height: 450px;
     background-color: #F2F1EB;
+    font-family: cursive;
+    font-style: italic;
+    color: gray;
+    
+}
+
+#cifras .titulo{
+    
+    color: #932625;
+}
+
+
+div.contenido ul{
+    
+    list-style: square;
 }
 
 #contenido {
     margin-left: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
-    width: 80%;
-}
-
-
-/* VER TAMBIEN */
-
-div#ver {
-        
-    height: 200px;
     width: 88%;
-    background-color: antiquewhite;
 }
 
-div#ver p {
+/*APRENDE MÁS*/
+
+div#aprende_mas{
+    
+    float:right;
+    margin:0;
     
 }
 
+#aprende_mas a {
+    
+    text-decoration: none;
+    
+}
+#aprende_mas a:visited{
+    
+    color:darkslategray;
+}
+
+#aprende_mas a:link{
+    
+    color:darkslategray;
+}
+
+#aprende_mas img{
+    
+
+    height: 20px;
+    width: 26px;
+    float: left;
+}
+/* VER TAMBIEN */
+
+#ver_tambien{
+    
+    width: 88%;
+    height: 200px;  
+}
+
+#ver_tambien img{
+    
+    width: 95px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#ver_tambien #ver_izq{
+    float:left;
+    width: 30%;
+    height: 200px;
+}
+
+#ver_tambien #ver_der{
+    
+    float:left;
+    width: 70%;
+    height: 200px;
+}
+
+#ver_tambien ul {
+    margin-top: 35px;
+    list-style: none;
+    padding: 0px;
+}
+#ver_tambien #v1{
+    
+    font-family: cursive;
+    font-style: italic;
+    margin: 0px;
+
+}
+#ver_tambien li {
+    
+    font-family: cursive;
+    font-style: italic;
+}
+
+#ver_tambien #v1{
+    
+    color: brown; 
+    margin-bottom: 15px;
+}
+
+#ver_tambien #c1 a{
+    text-decoration: none;
+    color: darkslategray;
+}
+#ver_tambien #c1 {
+    margin-bottom: 10px;
+}
+
+#ver_tambien #i1{
+    
+    color:gray;
+}
 /* FOOTER */
 
 footer #footer_gris{
     margin-top:0px;
     margin-left: 14%;
     height: 350px;
-    width: 1200px;
+    width: 1350px;
     background-color: #F2F1EB;
+    font-family: cursive;
+    font-style: italic;
 }
 
 footer #footer_rojo{
     
     margin-left: 14%;
     height: 100px;
-    width: 1200px;
+    width: 1350px;
     background-color: #932625;
 }
 
 /* LISTAS ZONA GRIS */ 
 footer #listas div.contenedores {
-    
     margin-top: 2%;
     float: left;
-    width: 15%;
-    border: 1px solid black;
+    width: 16%;
 }
 
 #listas div#l1{
@@ -249,13 +454,13 @@ footer #listas div.contenedores {
 
 #listas div ul li {
     
-    padding-bottom: 2%;   
+    margin-bottom: 1%;   
     
 }
 
-#listas div ul li a {
+footer div#listas div ul li a {
     
-    font-size: 12px;
+    font-size: 13px;
     color: #686159;
     text-decoration: none;
 }
@@ -264,68 +469,127 @@ footer #listas div.contenedores {
     
     color: #932625;
     text-decoration: none;
+    font-weight: bold;
+} 
+
+/* BOTONES FOOTER GRIS */ 
+#iconos .caja_gris a{
+    
+    text-decoration: none;   
 }
 
-
+/* Eliminar padding izquierdo original*/
+#iconos ul {
     
-
-/* ICONOS FOOTER GRIS */ 
-
-.contenedores div.caja_gris{
+    padding-left: 10px;
     
+}
+
+#iconos ul li button {
+    
+    margin-bottom: 7px;
+    border: none;
+    height: 45px;
+    width: 160px;
+    background-color: #D5D0C0;
     border-radius: 5px;
-    background: #D5D0C0;
-    margin-left: 25px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    width: 130px;
-    height: 35px;   
+    font-style: italic;
+    font-size: 17px;
 }
-#iconos div p {
+
+img.icono{
     
-    margin-left: 30px;
-    position: relative;
+    float: left;
+    height: 20px;
+    width: 20px;
+    display: inline;
 }
 
-#c
+button div {
 
+    height: 45px;
+    width: 160px;
+    
+}
+button div p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 115px;
+}
+button div img {
+    
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+#iconos a:visited, #iconos a:link{
+    
+    color: #686159;
+}
 
 /* FOOTER ROJO */ 
 
 #footer_rojo #div_izq {
     
-    
-    margin-left: 8%;
-    margin-top:1%;
     float:left;
-    color:white;    
+    color:white;  
+    height: 100px;
+    width: 25%;
+}
+
+#footer_rojo div#div_izq p {
+    
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+/* Tocamos el span para mover hacia la izquierda 
+   la parte Granada de Universidad de Granada */
+#footer_rojo #div_izq p span {
+    
+    margin-left: 25px;
 }
 
 #footer_rojo #div_der{
     
     color: white;
     float: left;
-    margin-left: 5%;
+    height: 100px;
+    width: 70%;
+    font-family: cursive;
+    font-style: italic;
 }
 
+/* Parte izquierda UNIVERSIDAD GRANADA */
 #footer_rojo #div_der ul {
+    
+    margin-top: 30px;
+    margin-bottom: 0px;
     padding-left: 0px;
     list-style-type: none;
 }
 
 #footer_rojo #div_der ul li {
     display: inline;    
-    padding-right: 5px; 
+    margin-right: 15px;
 }
 
 #footer_rojo #div_der ul li a{
     
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    
 }
 
 #footer_rojo #div_der ul {
     border-bottom: 0px;
+}
+
+#footer_rojo #div_der p{
+    
+    margin-top: 5px;
+    font-size: 13px;
 }
     
     
